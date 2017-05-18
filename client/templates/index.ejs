@@ -15,8 +15,8 @@
 			<textarea id="window" readonly></textarea>
 			<div id="controls">
 				<button id="pics">P</button>
-				<form id="text">
-					<input type="text" id="box">
+				<form id="text" action="/submit" method="post">
+					<input type="text" id="box" name="chat_input">
 					<input type="submit" value="submit" id="submit">
 				</form>
 				<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -26,6 +26,9 @@
 						socket.on('connect', function(data) {
 							console.log('Hellow');
 						});
+						socket.on('messages', function(data) {
+                alert(data);
+        });
 			</script>
 			</div>
 			<div id="popup"></div>
