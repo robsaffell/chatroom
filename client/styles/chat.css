@@ -1,0 +1,71 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+
+#wrapper{
+	width: 960px;
+	height: 960px;
+	background: green;
+	margin: auto auto;
+}
+
+#header{
+	width: 900px;
+	height: 100px;
+	margin: auto auto;
+	vertical-align: top;
+	text-align: center;
+}
+
+#header button{
+	display: inline-block;
+	vertical-align: top;
+	background-color: red;
+	border: none;
+	color: white;
+	height: 90px;
+	width: 90px;
+	margin-top: 5px;
+	margin-left: -250px;
+	font-size: 85px;
+}
+
+#header h1{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 30px;
+	margin-left: 150px;
+}
+
+textarea {
+	width: 900px;
+	height: 400px;
+	margin-left: 30px;
+	resize: none;
+}
+
+#controls{
+	width: 900px;
+	height: 50px;
+	margin: auto auto;
+	background: blue;
+}
+
+#pics {
+	display: inline-block;
+	height: 45px;
+	width: 45px;
+	vertical-align: top;
+	margin-top: 2px;
+	background-color: grey;
+	border: none;
+	font-size: 40px;
+}
+
+#text {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 15px;
+	margin-left: 300px;
+}

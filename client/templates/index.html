@@ -2,14 +2,17 @@
 <html>
 	<head>
 		<title>Chat Window</title>
+		<link rel="stylesheet" type="text/css" href="./../styles/chat.css">
 	</head>
 	<body>
 		<div id="wrapper">
 			<div id="header">
+				<button id="close">X</button>
+				<h1>Chatting with Name</h1>
 			</div>
-			<textarea id="window"></textarea>
+			<textarea id="window" readonly></textarea>
 			<div id="controls">
-				<button id="pics" value="P">
+				<button id="pics">P</button>
 				<form id="text">
 					<input type="text">
 					<input type="submit" value="submit">
