@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chat Window</title>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+			</div>
+			<textarea id="window"></textarea>
+			<div id="controls">
+				<button id="pics" value="P">
+				<form id="text" method="post" action="/submit">
+					<input type="text" id="chat_input" name="chat_input" value="Say something">
+					<input type="submit" value="Submit">
+
+				</form>
+				<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+				<script src="/socket.io/socket.io.js"></script>
+				<script>
+						var socket = io.connect('http://localhost:8000');
+						socket.on('connect', function(data) {
+							console.log('Hellow');
+						});
+			</script>
+			</div>
+		</div>
+	</body>
+</html>
