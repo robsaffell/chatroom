@@ -20,12 +20,13 @@
 					<input type="submit" value="submit" id="submit">
 				</form>
 				<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+				<script src="/socket.io/socket.io.js"></script>
 				<script>
-				    var socket = io.connect('http://localhost:8000');
-				    socket.on('connect', function(data) {
-				        socket.emit('join', 'IT IS ALIVE');
-				    });
-				</script>
+						var socket = io.connect('http://localhost:8000');
+						socket.on('connect', function(data) {
+							console.log('Hellow');
+						});
+			</script>
 			</div>
 			<div id="popup"></div>
 		</div>

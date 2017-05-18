@@ -1,26 +1,29 @@
 var express = require('express'),
-<<<<<<< HEAD
 	app		= express (),
-=======
-	app		= expres (),
->>>>>>> 33a778d8670a1b32064d1f5ae64ec42ef393706d
+	http  = require('http'),
 	bp		= require('body-parser'),
 	path	= require('path'),
-	port 	= 8000;
+	port 	= 8000,
+	server = http.createServer(app),
+	io = require('socket.io')(server);
+
 
 app.use(bp.urlencoded({extended:true}));
 app.use(express.static(path.join(__dirname + '/client')));
 app.set('views', path.join(__dirname + '/client/templates'));
 app.set('view engine', 'ejs');
+require('./server/config/routes.js')(app);
+
 io.on('connection', function(client) {
-    console.log('Connected...');
+    console.log('Client connected...');
+
     client.on('join', function(data) {
-        console.log(data);
+        console.log(data)
     });
 
 });
-require('./server/config/routes.js')(app);
 
-app.listen(port, function(){
+
+server.listen(port, function(){
 	console.log('working');
 })
