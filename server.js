@@ -1,5 +1,9 @@
 var express = require('express'),
+<<<<<<< HEAD
 	app		= express (),
+=======
+	app		= expres (),
+>>>>>>> 33a778d8670a1b32064d1f5ae64ec42ef393706d
 	bp		= require('body-parser'),
 	path	= require('path'),
 	port 	= 8000;
