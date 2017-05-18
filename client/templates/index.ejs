@@ -4,7 +4,9 @@
 		<title>Chat Window</title>
 		<link rel="stylesheet" type="text/css" href="./../styles/chat.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
 		<script src="./../scripts/chat.js"></script>
+		<script src="./../scripts/pokepics.js"></script>
 	</head>
 	<body>
 		<div id="wrapper">
@@ -12,24 +14,15 @@
 				<button id="close">X</button>
 				<h1>Chatting with Name</h1>
 			</div>
-			<textarea id="window" readonly></textarea>
+			<div id="window" readonly>
+				What is this
+			</div>
 			<div id="controls">
-				<button id="pics">P</button>
-				<form id="text" action="/submit" method="post">
+				<button id="pics" onclick="pokepics()">P</button>
+				<form id="text" onsubmit="return false">
 					<input type="text" id="box" name="chat_input">
-					<input type="submit" value="submit" id="submit">
+					<input type="button" value="submit" id="submit">
 				</form>
-				<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-				<script src="/socket.io/socket.io.js"></script>
-				<script>
-						var socket = io.connect('http://localhost:8000');
-						socket.on('connect', function(data) {
-							console.log('Hellow');
-						});
-						socket.on('messages', function(data) {
-                alert(data);
-        });
-			</script>
 			</div>
 			<div id="popup"></div>
 		</div>

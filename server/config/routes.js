@@ -4,8 +4,8 @@ module.exports = function(app){
 		res.render('index');
 	})
 
-	app.post('/submit', function(req, res){
-		res.render('index', req.body);
-		console.log(req.body);
-	})
+	// app.post('/submit', function(req, res){
+	// 	res.render('index', req.body);
+	// 	console.log(req.body);
+	// })
 }

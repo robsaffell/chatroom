@@ -17,10 +17,14 @@ require('./server/config/routes.js')(app);
 io.on('connection', function(client) {
     console.log('Client connected...');
 
-    client.on('join', function(data) {
-        console.log(data);
-				client.emit('messages', 'Hello from server');
+		client.on('join', function(data) {
+				client.broadcast.emit('messages', 'Hello from server, You are now Connected');
     });
+		client.on('text', function(data) {
+			console.log(data[0].value);
+			client.broadcast.emit('screen', data[0].value)
+			// client.broadcast.emit('screen', data.value)
+		})
 
 });
 
