@@ -5,7 +5,6 @@ $(document).ready(function() {
 
 	$("#text").submit(function() {
 		$("box").reset();
-		return false;
 	});
 
 	$("#pics").click(function() {
