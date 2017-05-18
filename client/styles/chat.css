@@ -61,6 +61,18 @@ textarea {
 	font-size: 40px;
 }
 
+#popup {
+	position: relative;
+	display: none;
+	top: -450px;
+	left: 30px;
+	height: 400px;
+	width: 100px;
+	border: thin solid black;
+	z-index: 2;
+	background-color: white;
+}
+
 #text {
 	display: inline-block;
 	vertical-align: top;
