@@ -90,3 +90,14 @@
 	width: 60px;
 	height: 40px;
 }
+.left{
+	height: 400px;
+	width: 400px;
+	display: inline-block;
+}
+.right{
+	height: 400px;
+	width: 400px;
+	display: inline-block;
+	float: right;
+}
