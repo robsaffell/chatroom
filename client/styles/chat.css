@@ -1,0 +1,91 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+
+#wrapper{
+	width: 960px;
+	height: 960px;
+	margin: auto auto;
+}
+
+#header{
+	width: 900px;
+	height: 100px;
+	margin: auto auto;
+	vertical-align: top;
+	text-align: center;
+}
+
+#header button{
+	display: inline-block;
+	vertical-align: top;
+	background-color: red;
+	border: none;
+	color: white;
+	height: 40px;
+	width: 40px;
+	margin-top: 5px;
+	margin-left: -250px;
+	font-size: 35px;
+}
+
+#header h1{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 30px;
+	margin-left: 150px;
+}
+
+textarea {
+	width: 900px;
+	height: 400px;
+	margin-left: 30px;
+	resize: none;
+}
+
+#controls{
+	width: 900px;
+	height: 50px;
+	margin: auto auto;
+}
+
+#pics {
+	display: inline-block;
+	height: 45px;
+	width: 45px;
+	vertical-align: top;
+	margin-top: 2px;
+	background-color: grey;
+	border: none;
+	font-size: 40px;
+}
+
+#popup {
+	position: relative;
+	display: none;
+	top: -450px;
+	left: 30px;
+	height: 400px;
+	width: 100px;
+	border: thin solid black;
+	z-index: 2;
+	background-color: white;
+}
+
+#text {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 2px;
+	margin-left: 200px;
+}
+
+#box{
+	width: 400px;
+	height: 40px;
+}
+
+#submit {
+	width: 60px;
+	height: 40px;
+}
