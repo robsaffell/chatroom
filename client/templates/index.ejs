@@ -2,36 +2,13 @@
 <html>
 	<head>
 		<title>Chat Window</title>
-<<<<<<< HEAD
-=======
 		<link rel="stylesheet" type="text/css" href="./../styles/chat.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 		<script src="./../scripts/chat.js"></script>
->>>>>>> a2d62dd4e82bfe58071c55a651371d22275cc816
 	</head>
 	<body>
 		<div id="wrapper">
 			<div id="header">
-<<<<<<< HEAD
-			</div>
-			<textarea id="window"></textarea>
-			<div id="controls">
-				<button id="pics" value="P">
-				<form id="text" method="post" action="/submit">
-					<input type="text" id="chat_input" name="chat_input" value="Say something">
-					<input type="submit" value="Submit">
-
-				</form>
-				<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-				<script src="/socket.io/socket.io.js"></script>
-				<script>
-						var socket = io.connect('http://localhost:8000');
-						socket.on('connect', function(data) {
-							console.log('Hellow');
-						});
-			</script>
-			</div>
-=======
 				<button id="close">X</button>
 				<h1>Chatting with Name</h1>
 			</div>
@@ -43,15 +20,15 @@
 					<input type="submit" value="submit" id="submit">
 				</form>
 				<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+				<script src="/socket.io/socket.io.js"></script>
 				<script>
-				    var socket = io.connect('http://localhost:8000');
-				    socket.on('connect', function(data) {
-				        socket.emit('join', 'IT IS ALIVE');
-				    });
-				</script>
+						var socket = io.connect('http://localhost:8000');
+						socket.on('connect', function(data) {
+							console.log('Hellow');
+						});
+			</script>
 			</div>
 			<div id="popup"></div>
->>>>>>> a2d62dd4e82bfe58071c55a651371d22275cc816
 		</div>
 	</body>
 </html>
