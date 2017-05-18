@@ -7,7 +7,7 @@ module.exports = function(app){
 
 	app.post('/submit', function(req, res){
 
-		res.render('index', {name: req.body.msg});
+		res.render('index', {msg: req.body.msg});
 		
 	})
 }
