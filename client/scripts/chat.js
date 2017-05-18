@@ -19,7 +19,7 @@ $(document).ready(function() {
 	$('#submit').click(function(){
 
 		var formData = $('#box').serializeArray()
-		$('.right').append(formData[0].value)
+		$('.left').append(formData[0].value)
 		socket.emit('text', formData)
 		$("#text").each(function() {
 			this.reset();
@@ -28,7 +28,7 @@ $(document).ready(function() {
 	});
 	socket.on('screen', function(data){
 		console.log(data);
-		$('.left').append(data)
+		$('.right').append(data)
 
 	})
 });
